@@ -1,0 +1,58 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+body, h1, h2, h3, h4, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+header, section, footer {
+   padding: 22px 100px 30px;}
+
+
+h1, h2, h3, h4 {
+  font-weight: 600; /* Semibold */
+}
+
+
+p, a {
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
+}
+
+header,
+.ai,
+.packages,
+.installment {
+background-color: #121212;
+color: #fff;
+}
+.pricing-section,
+.testimonials {
+  background-color: #fff;
+ color: #000;
+}
+
+
