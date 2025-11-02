@@ -1,45 +1,46 @@
 
-.pricing__container {
 
-}
+/* Банер */
 .pricing__banner {
-    background-image: url(../img/Frame-min.png);
-background-size: cover;
-background-position: center;
-border-radius: 20px;
-width: 1202px;
-height: 145px;
-   padding: 12px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+  background-image: url("../img/Frame-min.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 1202px;
+  height: 145px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
-.pricing__timer {
-display: flex;
-flex-direction: column;
 
+/* Таймер (верхній) */
+.pricing__timer {
+  display: flex;
+  flex-direction: column;
 }
+
 .pricing__title-up {
-    font-weight: 500;
-font-size: 16px;
-color: #fff;
-margin-bottom: 17px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 17px;
 }
+
 .pricing__title-down {
-font-weight: 500;
-font-size: 16px;
-color: #000;
-margin-bottom: 17px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 17px;
 }
 
 .pricing__countdown {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.pricing__countdown div {
+.pricing__countdown > div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,136 +48,150 @@ margin-bottom: 17px;
 }
 
 .pricing__countdown small {
-    position: absolute;
-    bottom: -2px;
+  position: absolute;
+  bottom: -2px;
   display: block;
-font-weight: 400;
-font-size: 10px;
-line-height: 240%;
-color: #000;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 240%;
+  color: #000;
   margin-top: 6px;
-
 }
 
-/* додаємо двокрапку після кожного блоку, крім останнього */
-.pricing__countdown div:not(:last-child)::after {
+/* Двокрапка між блоками (крім останнього) */
+.pricing__countdown > div:not(:last-child)::after {
   content: ":";
   font-weight: bold;
   position: absolute;
-  right: -15px; /* регулюй позицію */
+  right: -15px;
   top: 10px;
   font-size: 30px;
-  color: #fff; 
-}
-.pricing__days, .pricing__hours, .pricing__minutes, .pricing__seconds {
-    border-radius: 4px;
-width: 61px;
-background: #fff;
-padding: 13px;
-font-weight: 900;
-font-size: 30px;
-text-align: center;
-color: #000;
+  color: #fff;
 }
 
-.pricing__days-bottom, .pricing__hours-bottom, .pricing__minutes-bottom, .pricing__seconds-bottom {
-     border-radius: 4px;
-width: 61px;
-background: #e8ddf3;
-padding: 13px;
-font-weight: 900;
-font-size: 30px;
-text-align: center;
-color: #000;
+/* Окремі блоки таймера (верх) */
+.pricing__days,
+.pricing__hours,
+.pricing__minutes,
+.pricing__seconds {
+  border-radius: 4px;
+  width: 61px;
+  background: #fff;
+  padding: 13px;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  color: #000;
 }
 
-/* додаємо двокрапку після кожного блоку, крім останнього */
-.pricing__countdown-bottom div:not(:last-child)::after {
+/* Таймер (нижній) */
+.pricing__days-bottom,
+.pricing__hours-bottom,
+.pricing__minutes-bottom,
+.pricing__seconds-bottom {
+  border-radius: 4px;
+  width: 61px;
+  background: #e8ddf3;
+  padding: 13px;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+}
+
+.pricing__countdown-bottom > div:not(:last-child)::after {
   content: ":";
   font-weight: bold;
   position: absolute;
-  right: -15px; 
+  right: -15px;
   top: 10px;
   font-size: 30px;
   color: #e8ddf3;
 }
 
-.pricing__days small, .pricing__hours small, .pricing__minutes small, .pricing__seconds small {
-font-weight: 400;
-font-size: 10px;
-line-height: 240%;
-text-align: center;
-color: #000;
+.pricing__days small,
+.pricing__hours small,
+.pricing__minutes small,
+.pricing__seconds small {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 240%;
+  text-align: center;
+  color: #000;
 }
 
 .pricing__colon {
-    color: #fff;
-    width: 10px;
-    height: 10px;
+  color: #fff;
+  width: 10px;
+  height: 10px;
 }
 
+/* Бонус‑блок */
 .pricing__bonus {
-    display: flex;
-    align-items: center;
-    background: #e8ddf3;
-    border-radius: 20px;
-    width: 489px;
+  display: flex;
+  align-items: center;
+  background: #e8ddf3;
+  border-radius: 20px;
+  width: 489px;
 }
+
 .pricing__bonus-img {
-      display: block;
-  margin-left: -25px; 
-  margin-right: -25px; 
+  display: block;
+  margin-left: -25px;
+  margin-right: -25px;
 }
 
 .pricing__bonus-title {
-font-weight: 400;
-font-size: 28px;
-line-height: 100%;
-color: #000;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  color: #000;
 }
+
 .pricing__bonus-title strong {
-    font-weight: 700;
+  font-weight: 700;
 }
+
+/* Заголовок секції */
 .pricing__title {
-font-weight: 400;
-font-size: 46px;
-line-height: 120%;
-color: #000;
-width: 456px;
-transform: translateY(130px);
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 120%;
+  color: #000;
+  width: 456px;
+  transform: translateY(130px);
 }
+
+/* Таблиця цін */
 .pricing__table {
-      width: 100%;
+  width: 100%;
   border-collapse: collapse;
   text-align: start;
   overflow: visible;
- border-radius: 8px 0 8px 8px;
- 
+  border-radius: 8px 0 8px 8px;
 }
 
 .pricing__table thead th {
-box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.05);
-background: #f4f5f7;
-  vertical-align: inherit; 
-border-radius: 24px 24px 0 0;
-
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+  background: #f4f5f7;
+  vertical-align: inherit;
+  border-radius: 24px 24px 0 0;
 }
 
 .pricing__table thead th:nth-child(1) {
-background-color: #fff;
-overflow: hidden;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .pricing__table thead th:nth-child(3) {
-box-shadow: -3px 0 16px 0 rgba(3, 19, 54, 0.2), 3px 0 16px 0 rgba(3, 19, 54, 0.2);
-background: #8b57c2;
-border-radius: 24px 24px 0 0;
-width: 270px;    
+  box-shadow: -3px 0 16px rgba(3, 19, 54, 0.2), 3px 0 16px rgba(3, 19, 54, 0.2);
+  background: #8b57c2;
+  border-radius: 24px 24px 0 0;
+  width: 270px;
   position: relative;
   z-index: 2;
 }
-.pricing__head {
-}
+
 .plan__badge {
   display: inline-block;
   font-size: 12px;
@@ -192,99 +207,93 @@ width: 270px;
   position: relative;
 }
 
-.plan__badge1 {
-    position: absolute;
+/* Badges для різних планів */
+.plan__badge1,
+.plan__badge3 {
+  position: absolute;
   top: -15px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000;
+}
+
+.plan__badge1 {
   background: #fea800;
   border-radius: 70px;
-padding: 10px;
-width: 78px;
-font-weight: 700;
-font-size: 14px;
-line-height: 120%;
-color: #000;
 }
+
 .plan__badge2 {
-      position: absolute;
-  top: -23px; 
+  position: absolute;
+  top: -23px;
   left: 86%;
   transform: translateX(-50%);
   z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #ff7ef2;
-border-radius: 12px 12px 0 0;
-padding: 10px;
-width: 78px;
-font-weight: 700;
-font-size: 14px;
-line-height: 120%;
-color: #000;
+  border-radius: 12px 12px 0 0;
+  padding: 10px;
+  width: 78px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000;
 }
+
 .plan__badge3 {
-    position: absolute;
-  top: -15px; /* піднімає над коміркою */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   background: #5b9aff;
   border-radius: 70px;
-padding: 10px;
-width: 78px;
-font-weight: 700;
-font-size: 14px;
-line-height: 120%;
-color: #000;
 }
+
 .plan__name {
-    font-weight: 700;
-font-size: 28px;
-line-height: 120%;
-text-align: center;
-color: #000;
-text-align: center;
-
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  color: #000;
 }
+
 .plan__name-Pro {
-font-weight: 900;
-font-size: 80px;
-line-height: 120%;
-text-align: center;
-color: #fff;
-
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
 }
+
 .plan__text {
-    font-weight: 600;
-font-size: 10px;
-line-height: 120%;
-text-align: center;
-color: #000;
-opacity: 0.5;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 120%;
+  text-align: center;
+  color: #000;
+  opacity: 0.5;
 }
 
 .plan__text-Pro {
-font-weight: 600;
-font-size: 10px;
-line-height: 120%;
-text-align: center;
-color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
 }
 
+/* Тіло таблиці */
 .pricing__body {
-    font-weight: 500;
-font-size: 16px;
-line-height: 120%;
-color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #000;
 }
 
 .pricing__body td:has(> span.check) {
@@ -305,70 +314,60 @@ color: #000;
   vertical-align: middle;
 }
 
-/* --- 2-а колонка (Standard) — жовтий фон --- */
 .pricing__body td:nth-child(2) .check {
   background-color: #fea800;
 }
 
-/* --- 3-я колонка (Pro) — фіолетовий фон --- */
 .pricing__body td:nth-child(3) .check {
   background-color: #8b57c2;
 }
 
-/* --- 4-та колонка (Premium) — блакитний фон --- */
 .pricing__body td:nth-child(4) .check {
   background-color: #5b9aff;
 }
 
 .pricing__body tr {
-width: 1200px;
+  width: 1200px;
   padding-left: 14px;
 }
+
 .pricing__body td {
-height: 70px;
+  height: 70px;
   padding-left: 14px;
 }
-
-/* --- ВИДІЛЯЄМО ТРЕТЮ КОЛОНКУ (Pro) --- */
-.pricing__table td:nth-child(3) {
-
-}
-
 
 .pricing__body tr td:nth-child(n+2) {
   text-align: center;
-  
 }
+
 .pricing__body tr:nth-child(odd) td {
   background: #f4f5f7;
   border-radius: 8px;
-
-  
 }
+
 .pricing__body tr:nth-child(odd) td:first-child {
-  border-radius: 8px 0 0 8px; 
- 
+  border-radius: 8px 0 0 8px;
 }
+
 .pricing__body tr:nth-child(odd) td:last-child {
-  border-radius: 0 8px 8px 0; 
-
+  border-radius: 0 8px 8px 0;
 }
 
+/* Підказки для features */
 .feature__tooltip {
-      position: relative;
+  position: relative;
   display: inline-block;
   margin-left: 6px;
   cursor: pointer;
 }
-.feature__icon {
-}
+
 .feature__text {
   position: absolute;
   top: 140%;
   left: 120px;
   transform: translateX(-50%);
   width: 425px;
-background: rgba(139, 87, 194, 0.2);
+  background: rgba(139, 87, 194, 0.2);
   border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -391,18 +390,19 @@ background: rgba(139, 87, 194, 0.2);
   border-width: 20px;
   border-style: solid;
   border-color: transparent transparent rgba(139, 87, 194, 0.2) transparent;
-  z-index: 0; 
+  z-index: 0;
   filter: drop-shadow(0 -1px 1px rgba(0, 0, 0, 0.05));
 }
-
 
 .feature__tooltip:hover .feature__text {
   visibility: visible;
   opacity: 1;
 }
-.pricing__foot tr td:nth-child(n+2) {
+
+/* Футер таблиці з цінами */
+.pricing__foot td:nth-child(n+2) {
   text-align: center;
-} 
+}
 
 .price__col {
   display: flex;
@@ -412,89 +412,96 @@ background: rgba(139, 87, 194, 0.2);
   margin-top: 25px;
 }
 
-  
 .price__old {
-font-weight: 500;
-font-size: 20px;
-line-height: 120%;
-text-decoration: line-through;
-text-align: center;
-color: #000;
-opacity: 0.6;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  text-decoration: line-through;
+  text-align: center;
+  color: #000;
+  opacity: 0.6;
 }
 
 .price__new .price__gtn {
-    font-weight: 500;
-font-size: 20px;
-line-height: 120%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
 }
+
 .price__new--standard .price__gtn {
-  color: #fea800; 
+  color: #fea800;
 }
 
 .price__new--pro .price__gtn {
-  color: #8b57c2; 
+  color: #8b57c2;
 }
 
 .price__new--premium .price__gtn {
-  color: #5b9aff; 
+  color: #5b9aff;
 }
+
 .price__new {
-    margin-bottom: 31px;
+  margin-bottom: 31px;
 }
+
 .price__new--standard {
-font-weight: 800;
-font-size: 50px;
-line-height: 120%;
-color: #fea800;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 120%;
+  color: #fea800;
 }
+
 .price__btn {
-    font-weight: 600;
-font-size: 16px;
-color: #fff;
-border-radius: 8px;
-padding: 18px 28px;
-background: #fea800;
-border: none;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 8px;
+  padding: 18px 28px;
+  background: #fea800;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
 }
+
 .pricing__foot td:nth-child(3) .price__btn {
   background: #8b57c2;
 }
+
 .pricing__foot td:nth-child(4) .price__btn {
   background: #5b9aff;
 }
 
-
 .price__left {
-    font-weight: 400;
-font-size: 12px;
-line-height: 120%;
-color: #fea800;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: #fea800;
 }
 
 .pricing__foot td:nth-child(3) .price__left {
   color: #000;
 }
 
-
 .pricing__foot td:nth-child(4) .price__left {
-  color: #5b9aff; 
+  color: #5b9aff;
 }
-.price__new--pro {    font-weight: 800;
-font-size: 50px;
-line-height: 120%;
-color: #8b57c2;
-}
-.price__new--premium {font-weight: 800;
-font-size: 50px;
-line-height: 120%;
-color: #5b9aff;
 
+.price__new--pro {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 120%;
+  color: #8b57c2;
 }
+
+.price__new--premium {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 120%;
+  color: #5b9aff;
+}
+
 .pricing__timer--bottom {
-    transform: translateY(-195px);
+  transform: translateY(-195px);
 }
