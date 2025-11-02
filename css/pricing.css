@@ -190,6 +190,7 @@
   width: 270px;
   position: relative;
   z-index: 2;
+  
 }
 
 .plan__badge {
@@ -296,11 +297,11 @@
   color: #000;
 }
 
-.pricing__body td:has(> span.check) {
+/* .pricing__body td:has(> span.check) {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .check {
   display: inline-flex;
@@ -338,19 +339,24 @@
 
 .pricing__body tr td:nth-child(n+2) {
   text-align: center;
+
 }
 
 .pricing__body tr:nth-child(odd) td {
   background: #f4f5f7;
-  border-radius: 8px;
 }
 
 .pricing__body tr:nth-child(odd) td:first-child {
   border-radius: 8px 0 0 8px;
+  
 }
 
 .pricing__body tr:nth-child(odd) td:last-child {
   border-radius: 0 8px 8px 0;
+  font-weight: 600;
+font-size: 16px;
+line-height: 120%;
+color: #000;
 }
 
 /* Підказки для features */
