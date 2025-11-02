@@ -209,8 +209,7 @@
 }
 
 /* Badges для різних планів */
-.plan__badge1,
-.plan__badge3 {
+.plan__badge1{
   position: absolute;
   top: -15px;
   left: 50%;
@@ -225,19 +224,15 @@
   font-size: 14px;
   line-height: 120%;
   color: #000;
-}
-
-.plan__badge1 {
-  background: #fea800;
+    background: #fea800;
   border-radius: 70px;
 }
-
 .plan__badge2 {
   position: absolute;
-  top: -23px;
-  left: 86%;
+  top: -35px; 
+  right: -39px; 
   transform: translateX(-50%);
-  z-index: 5;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -245,13 +240,28 @@
   border-radius: 12px 12px 0 0;
   padding: 10px;
   width: 78px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 120%;
-  color: #000;
+font-weight: 700;
+font-size: 14px;
+line-height: 120%;
+text-align: center;
+color: #fff;
 }
 
 .plan__badge3 {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
   background: #5b9aff;
   border-radius: 70px;
 }
