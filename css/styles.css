@@ -1,58 +1,71 @@
 
+
+/* Встановлюємо box-sizing для всіх елементів і псевдоелементів */
 *, *::before, *::after {
   box-sizing: border-box;
 }
-* {
-  box-sizing: border-box;
-}
+
+/* Видаляємо дефолтні margin/padding у базових тегів */
 body, h1, h2, h3, h4, p, ul, li {
   margin: 0;
   padding: 0;
 }
 
+/* Плавна прокрутка при переході до якорів */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
+/* Базові стилі для body */
 body {
   font-family: 'Gilroy', sans-serif;
   font-weight: 400; /* Regular */
 }
 
-
+/* Контейнер */
 .container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 }
+
+/* Padding для основних блоків */
 header, section, footer {
-   padding: 22px 100px 30px;}
+  padding: 22px 100px 30px;
+}
 
 
+/* Заголовки */
 h1, h2, h3, h4 {
   font-weight: 600; /* Semibold */
 }
 
-
+/* Абзаци, посилання */
 p, a {
   font-weight: 400;
 }
 
+/* Виділення */
 strong {
   font-weight: 700;
 }
 
+
+
+/* Фонові кольори секцій */
+
+/* Темні секції */
 header,
 .ai,
 .packages,
 .installment {
-background-color: #121212;
-color: #fff;
+  background-color: #121212;
+  color: #fff;
 }
+
+/* Світлі секції */
 .pricing-section,
 .testimonials {
   background-color: #fff;
- color: #000;
+  color: #000;
 }
-
-

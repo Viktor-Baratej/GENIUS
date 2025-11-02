@@ -1,49 +1,39 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+/* Заголовки і текст */
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-ul,
-ol {
+/* Списки */
+ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
+/* Посилання */
 a {
   text-decoration: none;
   color: currentColor;
 }
 
+/* Кнопки */
+button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background: none;
+}
 
-
-
-
-
-
+/* Зображення */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

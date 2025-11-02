@@ -1,143 +1,143 @@
-.packages {
-}
-.packages-container {
-}
+
 .packages-title {
-font-weight: 800;
-font-size: 50px;
-line-height: 120%;
-text-align: center;
-color: #fff;
-margin-bottom: 48px;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 48px;
 }
+
 .packages-title span {
-color: #8b57c2;
+  color: #8b57c2;
 }
 
+/* План-картки */
 .plan-content {
-    padding: 24px 24px 40px 24px;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 40px;
 }
+
 .plan-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
+
 .plan-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
-.plan-standard{
-border: 1px solid #ff7ef2;
-border-radius: 20px;
 
+/* Рамки карток */
+.plan-standard {
+  border: 1px solid #ff7ef2;
+  border-radius: 20px;
 }
+
 .plan-pro {
-    border: 1px solid #fecb00;
-border-radius: 20px;
-
+  border: 1px solid #fecb00;
+  border-radius: 20px;
 }
 
 .plan-premium {
   border: 1px solid #8b57c2;
-border-radius: 20px;
-
-
+  border-radius: 20px;
 }
 
+/* Заголовки карток */
+.packages-subtitle-standard,
+.packages-subtitle-pro,
+.packages-subtitle-premium {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
 .packages-subtitle-standard {
-         border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-font-weight: 700;
-font-size: 30px;
-line-height: 120%;
-color: #fff;
-background: #ff7ef2;
-text-align: center;
-padding: 20px 131px;
-
+  background: #ff7ef2;
+  color: #fff;
+  padding: 20px 131px;
 }
 
 .packages-subtitle-pro {
-      border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-font-weight: 700;
-font-size: 30px;
-line-height: 120%;
-color: #121212;
-background: #fecb00;
-text-align: center;
-padding: 20px 173px;
-
+  background: #fecb00;
+  color: #121212;
+  padding: 20px 173px;
 }
+
 .packages-subtitle-premium {
-         border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-font-weight: 700;
-font-size: 30px;
-line-height: 120%;
-color: #fff;
-background: #8b57c2;
-text-align: center;
-padding: 20px 136px;
-
+  background: #8b57c2;
+  color: #fff;
+  padding: 20px 136px;
 }
+
 .packages-subtitle {
-font-weight: 700;
-font-size: 30px;
-line-height: 120%;
-color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  color: #fff;
 }
 
-
+/* Текстові блоки */
 .packages-text-title {
-font-weight: 700;
-font-size: 20px;
-line-height: 120%;
-color: #fff;
-margin-bottom: 24px;
-
-}
-.packages-text-list, .packages-text-list-yellow, .packages-text-list-violet {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;  
-}
-.packages-text-list-yellow, .packages-text-list-violet {
-    margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 24px;
 }
 
+.packages-text-list,
+.packages-text-list-yellow,
+.packages-text-list-violet {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.packages-text-list-yellow,
+.packages-text-list-violet {
+  margin-bottom: 40px;
+}
+
+/* Звичайні пункти списку */
 .packages-text-item {
-font-weight: 500;
-font-size: 16px;
-line-height: 140%;
-color: #fff;
-opacity: 0.7;
-list-style: initial;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  opacity: 0.7;
+  list-style: initial;
 }
-.packages-text-item-yellow, .packages-text-item-violet {
-    position: relative;
-    font-weight: 500;
-font-size: 16px;
-line-height: 140%;
-color: #fff;
-opacity: 0.7;
-padding-left: 16px;
+
+/* Пункти з кастомним маркером */
+.packages-text-item-yellow,
+.packages-text-item-violet {
+  position: relative;
+  padding-left: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  opacity: 0.7;
 }
 
 .packages-text-item-yellow::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 7px; 
+  top: 7px;
   width: 10px;
   height: 10px;
-  background-color: #fecb00; 
+  background-color: #fecb00;
   border-radius: 2px;
 }
 
@@ -145,26 +145,27 @@ padding-left: 16px;
   content: "";
   position: absolute;
   left: 0;
-  top: 7px; 
+  top: 7px;
   width: 10px;
   height: 10px;
   background-color: #8b57c2;
   border-radius: 2px;
 }
 
+/* Розділювач */
 .card-border {
-    width: 345px;
-height: 1px;
-background: #fff;
-opacity: 0.3;
-margin-bottom: 40px;
+  width: 345px;
+  height: 1px;
+  background: #fff;
+  opacity: 0.3;
+  margin-bottom: 40px;
 }
 
+/* Підзаголовок під списком */
 .packages-text-title-2 {
-    width: 345px;
-    font-weight: 500;
-font-size: 16px;
-line-height: 140%;
-color: #fff;
-
+  width: 345px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
 }

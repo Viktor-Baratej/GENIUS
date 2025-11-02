@@ -1,135 +1,153 @@
+
 .installment {
   overflow: hidden;
 }
+
 .installment-container {
-   position: relative;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Ліва частина: інформація */
 .installment-info {
   display: flex;
   flex-direction: column;
   gap: 30px;
   flex: 0 0 380px;
-  z-index: 3; /* ✅ поверх картинки */
+  z-index: 3;
   position: relative;
-transform: translate(50px, -10px);
+  transform: translate(50px, -10px);
 }
+
 .installment-title {
-font-weight: 800;
-font-size: 46px;
-color: #8b57c2;
+  font-weight: 800;
+  font-size: 46px;
+  color: #8b57c2;
 }
+
 .installment-subtitle {
-    color: #fff;
+  color: #fff;
 }
+
 .installment-text {
-font-weight: 400;
-font-size: 20px;
-line-height: 150%;
-color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.9);
 }
+
 .installment-subtext {
-    font-weight: 700;
-color: #8b57c2;
+  font-weight: 700;
+  color: #8b57c2;
 }
+
+/* Центр: "бульбочка" дедлайну */
 .deadline-wrapper {
-   flex: 1;
+  flex: 0 0 600px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
-    flex: 0 0 600px; /* широка область для “бульбочки” */
-
 }
+
 .deadline-banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-width: 201px;
-height: 268px;
-     position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 201px;
+  height: 268px;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-background: rgba(255, 255, 255, 0.01);
+  background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(38px);
-border-radius: 20px;
-  padding: 16px 24px;
   border-radius: 16px;
+  padding: 16px 24px;
   color: #fff;
   text-align: center;
   z-index: 2;
 }
+
 .deadline-text {
-font-weight: 700;
-font-size: 16px;
-line-height: 115%;
-text-align: center;
-color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 115%;
+  text-align: center;
+  color: #fff;
 }
+
 .deadline-img {
-    position: relative;
-  z-index: 1; /* нижче тексту */
+  position: relative;
+  z-index: 1;
 }
+
 .deadline-img img {
   display: block;
-  width: 120%;        
-  max-width: none;    
-  object-fit: contain;  
+  width: 120%;
+  max-width: none;
+  object-fit: contain;
   transform: translateX(-10%);
 }
+
 .deadline-date {
-font-weight: 900;
-font-size: 141px;
-line-height: 14%;
-color: #8b57c2;
+  font-weight: 900;
+  font-size: 141px;
+  line-height: 14%;
+  color: #8b57c2;
 }
+
 .deadline-months {
-font-weight: 700;
-font-size: 29px;
-line-height: 69%;
-color: #fff;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 69%;
+  color: #fff;
 }
+
+/* Права частина: */
 .installment-steps {
   flex: 0 0 360px;
-  z-index: 3; /* ✅ теж поверх картинки */
+  z-index: 3;
   position: relative;
   transform: translateX(23px);
 }
+
 .installment-title-subtitle {
-font-weight: 700;
-font-size: 22px;
-line-height: 150%;
-color: #fff;
-margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 30px;
 }
+
 .installment-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
+
 .installment-item {
-    position: relative;
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-color: rgba(255, 255, 255, 0.9);
-padding-left: 14px;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.9);
+  padding-left: 14px;
 }
+
 .installment-item::before {
-    content: "";
+  content: "";
   position: absolute;
   left: 0;
-  top: 7px; 
+  top: 7px;
   width: 10px;
   height: 10px;
   background-color: #8b57c2;
-border-radius: 100%;
+  border-radius: 100%;
 }
-
