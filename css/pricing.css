@@ -527,15 +527,30 @@ text-align: center;
 color: #000;
 }
 
-.highlight-column::before {
+.vector::before {
     position: absolute;
   content: "";
   background: url(../img/pricing-vector.png)no-repeat center center/contain;
-  top: 20px;
-right: -200px;  
-width: 1200px;
-height: 1200px;
+  top: -2px;
+right: 166px;  
+width: 109px;
+height: 105px;
 }
+.vector::after {
+  content: "Хіт продаж";
+  position: absolute;
+  top: 25px;     
+  right: 186px;   
+ font-weight: 700;
+font-size: 14px;
+line-height: 120%;
+text-align: center;
+color: #fff;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  z-index: 2; 
+}
+
 .pricing__body tr:nth-child(odd) td.highlight-column {
   background: rgba(139, 87, 194, 0.2) !important;
   box-shadow: 13px 0 20px 0 rgba(0, 0, 0, 0.06) !important;
