@@ -5,7 +5,7 @@
 .ai::before {
   position: absolute;
   content: "";
-  background: url(/img/AI-border.png)no-repeat center center/contain;
+  background: url(./img/AI-border.png)no-repeat center center/contain;
   top: 20px;
 right: -200px;  
 width: 1200px;
