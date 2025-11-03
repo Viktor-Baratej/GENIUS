@@ -39,15 +39,10 @@
 }
 
 /* Основна секція */
-.ai {
-  position: relative;
-  overflow: hidden;
-  padding-top: 40px;
-}
 
 .ai-container {
   display: flex;
-  flex-direction: row; /* <-- основна правка: розташування в рядок */
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
