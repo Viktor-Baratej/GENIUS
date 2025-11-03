@@ -309,27 +309,24 @@ color: #fff;
 
 
 .check {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   width: 28px;
   height: 28px;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 16px;
+  color: #5b9aff;
   vertical-align: middle;
 }
 
 .pricing__body td:nth-child(2) .check {
-  background-color: #fea800;
+fill: #FEA800;
 }
 
 .pricing__body td:nth-child(3) .check {
-  background-color: #8b57c2;
+fill: #8B57C2;
+width: 40px;
+height: 40px;
 }
 
 .pricing__body td:nth-child(4) .check {
-  background-color: #5b9aff;
+  fill: #5B9AFF;
 }
 
 .pricing__body tr {

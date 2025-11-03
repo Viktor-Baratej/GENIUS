@@ -1,7 +1,16 @@
-.ai-content-wrapper {
 
+.ai {
+  position: relative;
 }
-
+.ai::before {
+  position: absolute;
+  content: "";
+  background: url(/img/AI-border.png)no-repeat center center/contain;
+  top: 20px;
+right: -200px;  
+width: 1200px;
+height: 1200px;
+}
 
 /* Список елементів */
 .ai-items {
@@ -25,6 +34,8 @@
   align-items: center;
   justify-content: center;
 }
+
+
 
 .ai-item-icon {
   fill: #fff;
