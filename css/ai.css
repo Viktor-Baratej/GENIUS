@@ -1,3 +1,7 @@
+.ai-content-wrapper {
+
+}
+
 
 /* Список елементів */
 .ai-items {
@@ -34,12 +38,38 @@
   color: #fff;
 }
 
+/* Основна секція */
+.ai {
+  position: relative;
+  overflow: hidden;
+  padding-top: 40px;
+}
+
+.ai-container {
+  display: flex;
+  flex-direction: row; /* <-- основна правка: розташування в рядок */
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.ai-content {
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+}
+
 /* Герой-блок */
 .ai-hero {
   position: relative;
   display: flex;
   align-items: flex-start;
   gap: 17px;
+  margin-bottom: 30px;
 }
 
 .ai-title {
@@ -125,7 +155,11 @@
 
 /* Зображення */
 .ai-image {
-  position: absolute;
-  top: 18%;
-  right: 19%;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+  z-index: 0;
 }
