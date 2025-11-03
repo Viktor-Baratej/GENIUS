@@ -193,15 +193,30 @@
   
 }
 
-.plan__badge {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 12px;
-  margin-bottom: 6px;
-  color: #fff;
+.vector::before {
+    position: absolute;
+  content: "";
+  background: url(../img/pricing-vector.png)no-repeat center center/contain;
+  top: -2px;
+right: 166px;  
+width: 109px;
+height: 105px;
 }
+
+.plan__badge {
+  position: absolute;
+  content: "";
+  top: 23px;
+  right: 185px;
+transform: rotate(-45deg);
+  font-weight: 700;
+font-size: 14px;
+line-height: 120%;
+text-align: center;
+color: #fff;
+}
+
+
 
 .pricing__table thead th:nth-child(2),
 .pricing__table thead th:nth-child(4) {
@@ -272,6 +287,7 @@ color: #fff;
   line-height: 120%;
   text-align: center;
   color: #000;
+  margin-bottom: 37px;
 }
 
 .plan__name-Pro {
@@ -280,6 +296,8 @@ color: #fff;
   line-height: 120%;
   text-align: center;
   color: #fff;
+  margin-bottom: 37px;
+  padding-top: 50px;
 }
 
 .plan__text {
@@ -297,6 +315,7 @@ color: #fff;
   line-height: 120%;
   text-align: center;
   color: #fff;
+  padding-bottom: 12px;
 }
 
 /* Тіло таблиці */
@@ -527,29 +546,6 @@ text-align: center;
 color: #000;
 }
 
-.vector::before {
-    position: absolute;
-  content: "";
-  background: url(../img/pricing-vector.png)no-repeat center center/contain;
-  top: -2px;
-right: 166px;  
-width: 109px;
-height: 105px;
-}
-.vector::after {
-  content: "Хіт продаж";
-  position: absolute;
-  top: 25px;     
-  right: 186px;   
- font-weight: 700;
-font-size: 14px;
-line-height: 120%;
-text-align: center;
-color: #fff;
-  text-transform: uppercase;
-  transform: rotate(-45deg);
-  z-index: 2; 
-}
 
 .pricing__body tr:nth-child(odd) td.highlight-column {
   background: rgba(139, 87, 194, 0.2) !important;
