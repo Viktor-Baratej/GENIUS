@@ -526,8 +526,20 @@ line-height: 120%;
 text-align: center;
 color: #000;
 }
+
+.highlight-column::before {
+    position: absolute;
+  content: "";
+  background: url(../img/pricing-vector.png)no-repeat center center/contain;
+  top: 20px;
+right: -200px;  
+width: 1200px;
+height: 1200px;
+}
 .pricing__body tr:nth-child(odd) td.highlight-column {
   background: rgba(139, 87, 194, 0.2) !important;
   box-shadow: 13px 0 20px 0 rgba(0, 0, 0, 0.06) !important;
 }
+
+
 
